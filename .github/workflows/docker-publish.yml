@@ -42,7 +42,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.WuTong-ww }}
+          username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
         # 构建并推送
       - name: Build and push Docker image
